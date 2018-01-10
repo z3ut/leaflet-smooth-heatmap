@@ -1,0 +1,25 @@
+{
+  "name": "leaflet-smooth-heatmap",
+  "version": "1.0.0",
+  "description": "Serverless smooth and unbroken heatmap tile layer",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/z3ut/leaflet-smooth-heatmap.git"
+  },
+  "keywords": [
+    "leaflet",
+    "smooth",
+    "heatmap",
+    "layer"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/z3ut/leaflet-smooth-heatmap/issues"
+  },
+  "homepage": "https://github.com/z3ut/leaflet-smooth-heatmap#readme"
+}
