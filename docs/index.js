@@ -60,17 +60,17 @@ const sigma2 = 0, alpha = 100;
 const variogram = kriging.train(t, x, y, model, sigma2, alpha);
 
 
-function getBackgroundFromTemperature(temp, alpha = 50) {
+function getBackgroundFromTemperature(temp, alpha = .5) {
   if (typeof temp !== 'number' || isNaN(temp)) {
     // Grey
-    return `hsla(0, 0%, 75%, ${alpha}%)`;
+    return `hsla(0, 0%, 75%, ${alpha})`;
   }
 
   const hue = temp >= 0 ?
     -3 * Math.min(temp, 30) + 90 :
     -2 * Math.max(temp, -20) + 180;
 
-  return `hsla(${hue}, 80%, 60%, ${alpha}%)`;
+  return `hsla(${hue}, 80%, 60%, ${alpha})`;
 }
 
 function getColorForLatLng(lat, lng) {
