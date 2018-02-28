@@ -21,7 +21,7 @@ npm install leaflet-smooth-heatmap
 2. Import JS dependencies
 
 ```
-import { SmoothHeatmapLayer } from 'leaflet-smooth-heatmap';
+import SmoothHeatmapLayer from 'leaflet-smooth-heatmap';
 ```
 
 or include src/index.js to your bundle and use plugin through global L variable
@@ -33,7 +33,7 @@ const options = {
   canvasSize: 5,
   getColorForLatLng: (lat, lng) => `rgba(${90 + lat}, ${180 + lng}, 100, .5)`
 };
-map.addLayer( new SmoothHeatmapLayer(options)) );
+map.addLayer( new SmoothHeatmapLayer(options) );
 ```
 
 Example with data point interpolation in ./docs
